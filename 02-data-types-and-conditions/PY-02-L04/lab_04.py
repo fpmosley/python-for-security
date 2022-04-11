@@ -11,7 +11,7 @@ if question in protocols_dict.keys():
     answer = protocols_dict[question]
     print(f"The port number for protocol '{question}' is: {answer}")
 else:
-    print("The protocol cannot be found")
+    print(f"The protocol '{question}' cannot be found")
 
 # Alternative method of retrieving the value of the key using get() method.
 # Use "get()" method to avoid the KeyError. Returns a 'None' type if the key doesn't exist.
@@ -19,4 +19,4 @@ answer = protocols_dict.get(question)
 if answer:  # if answer is type None, then the condition will result in 'False'
     print(f"The port number for protocol '{question}' is: {answer}")
 else:
-    print("The protocol 'ssh' cannot be found")
+    print(f"The protocol '{question}' cannot be found")
