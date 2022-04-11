@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 
-this_is_a_string = "Hello"
-this_is_an_int = 25
-this_is_a_float = 25.0
-this_is_a_boolean = True
-this_is_a_list = [1, 2, 3]
-this_is_a_tuple = (1, 2, 3)
-this_is_a_dict = {'key': "value", 'key2': "value2"}
+variable_one = "Hello"
+variable_two = "25,"
+variable_three = 25.0
+variable_four = True
+variable_five = [1, 2, 3]
+variable_six = (1, 2, 3)
+variable_seven = {'key': "value", 'key2': "value2"}
 
-print(f"Type for 'this_is_a_string': {type(this_is_a_string)}")
-print(f"Type for 'this_is_an_int': {type(this_is_an_int)}")
-print(f"Type for 'this_is_a_float': {type(this_is_a_float)}")
-print(f"Type for 'this_is_a_boolean': {type(this_is_a_boolean)}")
-print(f"Type for 'this_is_a_list': {type(this_is_a_list)}")
-print(f"Type for 'this_is_a_tuple': {type(this_is_a_tuple)}")
-print(f"Type for 'this_is_a_dict': {type(this_is_a_dict)}")
+print(f"Type for 'variable_one': {type(variable_one)}")
+print(f"Type for 'variable_two': {type(variable_two)}")
+print(f"Type for 'variable_three': {type(variable_three)}")
+print(f"Type for 'variable_four': {type(variable_four)}")
+print(f"Type for 'variable_five': {type(variable_five)}")
+print(f"Type for 'variable_six': {type(variable_six)}")
+print(f"Type for 'variable_seven': {type(variable_seven)}")
