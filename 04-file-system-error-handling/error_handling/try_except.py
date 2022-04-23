@@ -6,7 +6,7 @@ print(f"tup[0]: {tup[0]}")     # => 1
 
 try:
     tup[0] = 3
-except (TypeError, ValueError) as foo:
-    print(f"Tuples are immutable: {foo}")
+except Exception:
+    print(f"Tuples are immutable: {e}")
 
 print("Got to the end of the program.")
