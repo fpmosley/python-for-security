@@ -1,6 +1,6 @@
 upper_bound = int(input("Please provide an upper bound for the range: "))
 
-for i in range(0, upper_bound):
+for i in range(upper_bound):
     print(f"{i}", end=" ")
 print()
 
