@@ -11,3 +11,4 @@ while True:
         print(e)
     except ValueError as e:
         print(e)
+        break
