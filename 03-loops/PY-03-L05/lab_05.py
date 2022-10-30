@@ -1,3 +1,5 @@
+import random
+
 money = 50
 shopping_cart = []
 fruits = {
@@ -10,14 +12,14 @@ while True:
     if money <= 0:
         print("Thanks for shopping. Please come again!")
         break
-    else:
-        player_choice = input(f"Select a fruit {fruits}: ").title()
-        if player_choice in fruits:
-            if money >= fruits[player_choice]:
-                shopping_cart.append(player_choice)
-                money -= fruits[player_choice]
-                print(f"Shopping cart: {shopping_cart} \nMoney left: {money}")
-            else:
-                print("You don't have enough money to make this purchase.")
+
+    player_choice = input(f"Select a fruit {fruits}: ").title()
+    if player_choice in fruits:
+        if money >= fruits[player_choice]:
+            shopping_cart.append(player_choice)
+            money -= fruits[player_choice]
+            print(f"Shopping cart: {shopping_cart} \nMoney left: {money}")
         else:
-            print("Invalid choice.")
+            print("You don't have enough money to make this purchase.")
+    else:
+        print("Invalid choice.")
