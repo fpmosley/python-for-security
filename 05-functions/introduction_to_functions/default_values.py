@@ -6,4 +6,4 @@ def welcome(email, full_name=None):
 
 
 name = input("Please enter your full name: ")
-welcome(name)
+welcome('test@gmail.com', name)

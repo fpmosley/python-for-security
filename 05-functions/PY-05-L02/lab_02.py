@@ -11,7 +11,7 @@ def returned_tup(first, second):
 
 
 def returned_none(first, second):
-    return first + second
+    res = first + second
 
 
 def main():
