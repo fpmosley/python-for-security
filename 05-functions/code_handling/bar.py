@@ -1,5 +1,5 @@
 def main():
-    print(f"util: {__name__}")
+    print(f"bar: {__name__}")
 
 
 if __name__ == '__main__':
